@@ -35,16 +35,13 @@ const styles = {
 
 function Intro() {
   return (
-    <Flex
-      backgroundColor="#F5F5F5"
-      justifyContent="space-between"
-      alignContent="center"
-      padding=".7%"
-    >
-      <Text style={styles.title}> Create. Explore. </Text>
-      <Text style={styles.subtitle}>
-        The document editing software you've been waiting for
-      </Text>
+    <Flex backgroundColor="#F5F5F5" height="400px">
+      <Flex>
+        <Text style={styles.title}> Create. Explore. </Text>
+        <Text style={styles.subtitle}>
+          The document editing software you've been waiting for
+        </Text>
+      </Flex>
     </Flex>
   );
 }

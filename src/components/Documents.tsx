@@ -15,42 +15,42 @@ function Documents() {
       top="523px"
       background="#FFFFFF"
     >
-    <GridItem>
+      <GridItem>
         <Image src="/blue.svg" alt="noimage" />
-    </GridItem>
-    <GridItem>
-    <Image src="/grey_rectangle.svg" alt="noimage" />
-    </GridItem>
-    <GridItem>
-    <Image src="/grey_rectangle.svg" alt="noimage" />
-    </GridItem>
-    <GridItem>
-    <Image src="/grey_rectangle.svg" alt="noimage" />
-    </GridItem>
-    <GridItem>
-    <Image src="/grey_rectangle.svg" alt="noimage" />
-    </GridItem>
-    <GridItem>
-    <Image src="/grey_rectangle.svg" alt="noimage" />
-    </GridItem>
-    <GridItem>
-    <Image src="/grey_rectangle.svg" alt="noimage" />
-    </GridItem>
-    <GridItem>
-    <Image src="/grey_rectangle.svg" alt="noimage" />
-    </GridItem>
-    <GridItem>
-    <Image src="/grey_rectangle.svg" alt="noimage" />
-    </GridItem>
-    <GridItem>
-    <Image src="/grey_rectangle.svg" alt="noimage" />
-    </GridItem>
-    <GridItem>
-    <Image src="/grey_rectangle.svg" alt="noimage" />
-    </GridItem>
-    <GridItem>
-    <Image src="/grey_rectangle.svg" alt="noimage" />
-    </GridItem>
+      </GridItem>
+      <GridItem>
+        <Image src="/grey_rectangle.svg" alt="noimage" />
+      </GridItem>
+      <GridItem>
+        <Image src="/grey_rectangle.svg" alt="noimage" />
+      </GridItem>
+      <GridItem>
+        <Image src="/grey_rectangle.svg" alt="noimage" />
+      </GridItem>
+      <GridItem>
+        <Image src="/grey_rectangle.svg" alt="noimage" />
+      </GridItem>
+      <GridItem>
+        <Image src="/grey_rectangle.svg" alt="noimage" />
+      </GridItem>
+      <GridItem>
+        <Image src="/grey_rectangle.svg" alt="noimage" />
+      </GridItem>
+      <GridItem>
+        <Image src="/grey_rectangle.svg" alt="noimage" />
+      </GridItem>
+      <GridItem>
+        <Image src="/grey_rectangle.svg" alt="noimage" />
+      </GridItem>
+      <GridItem>
+        <Image src="/grey_rectangle.svg" alt="noimage" />
+      </GridItem>
+      <GridItem>
+        <Image src="/grey_rectangle.svg" alt="noimage" />
+      </GridItem>
+      <GridItem>
+        <Image src="/grey_rectangle.svg" alt="noimage" />
+      </GridItem>
     </Grid>
   );
 }

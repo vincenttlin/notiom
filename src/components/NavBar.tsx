@@ -3,8 +3,8 @@ import { Flex, Image, Text } from "@chakra-ui/react";
 const styles = {
   title: {
     position: "absolute",
-    marginLeft: "70px",
-    marginTop: "5px",
+    marginLeft: "100px",
+    marginTop: "10px",
     justifyContent: "center",
     alignItems: "center",
     fontFamily: "DM Sans",
@@ -24,7 +24,13 @@ function NavBar() {
       padding=".7%"
     >
       <Flex>
-        <Image src="/N.svg" alt="noimage" alignContent="center" />
+        <Image
+          src="/N.svg"
+          alt="noimage"
+          alignContent="center"
+          marginLeft="20px"
+          marginTop="10px"
+        />
         <Text style={styles.title}>Notiom</Text>
       </Flex>
       <Flex padding="10px">
