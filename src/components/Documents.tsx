@@ -1,5 +1,7 @@
 import { Grid, GridItem, Image } from "@chakra-ui/react";
 
+import Doc from "./utils/Doc";
+
 function Documents() {
   return (
     <Grid
@@ -18,39 +20,17 @@ function Documents() {
       <GridItem>
         <Image src="/blue.svg" alt="noimage" />
       </GridItem>
-      <GridItem>
-        <Image src="/grey_rectangle.svg" alt="noimage" />
-      </GridItem>
-      <GridItem>
-        <Image src="/grey_rectangle.svg" alt="noimage" />
-      </GridItem>
-      <GridItem>
-        <Image src="/grey_rectangle.svg" alt="noimage" />
-      </GridItem>
-      <GridItem>
-        <Image src="/grey_rectangle.svg" alt="noimage" />
-      </GridItem>
-      <GridItem>
-        <Image src="/grey_rectangle.svg" alt="noimage" />
-      </GridItem>
-      <GridItem>
-        <Image src="/grey_rectangle.svg" alt="noimage" />
-      </GridItem>
-      <GridItem>
-        <Image src="/grey_rectangle.svg" alt="noimage" />
-      </GridItem>
-      <GridItem>
-        <Image src="/grey_rectangle.svg" alt="noimage" />
-      </GridItem>
-      <GridItem>
-        <Image src="/grey_rectangle.svg" alt="noimage" />
-      </GridItem>
-      <GridItem>
-        <Image src="/grey_rectangle.svg" alt="noimage" />
-      </GridItem>
-      <GridItem>
-        <Image src="/grey_rectangle.svg" alt="noimage" />
-      </GridItem>
+      <Doc />
+      <Doc />
+      <Doc />
+      <Doc />
+      <Doc />
+      <Doc />
+      <Doc />
+      <Doc />
+      <Doc />
+      <Doc />
+      <Doc />
     </Grid>
   );
 }
