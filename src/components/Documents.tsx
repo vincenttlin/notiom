@@ -1,8 +1,31 @@
-import { Grid, GridItem, Image } from "@chakra-ui/react";
+import {
+  Grid,
+  GridItem,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
+  Button,
+  Input,
+  Image,} from "@chakra-ui/react";
+import React, { useState } from "react";
 
-import Doc from "./utils/Doc";
+import DocText from "./DocText";
 
 function Documents() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const list: React.ReactElement[] = [];
+  const [docs, setDocs] = useState(list);
+  const [text, setText] = useState("");
+  const handleChange = (event) => setText(event.target.value);
+  function increase() {
+    setDocs(docs.concat(<DocText text={text} />));
+    setText("");
+  }
   return (
     <Grid
       templateColumns="repeat(6, 2fr)"
@@ -18,21 +41,40 @@ function Documents() {
       background="#FFFFFF"
     >
       <GridItem>
-        <Image src="/blue.svg" alt="noimage" />
+        <Image src="/blue.svg" alt="noimage" onClick={onOpen} />
+        <Modal isOpen={isOpen} onClose={onClose}>
+          <ModalOverlay />
+          <ModalContent>
+            <ModalHeader>New Document</ModalHeader>
+            <ModalCloseButton />
+            <ModalBody>
+              {" "}
+              <Input
+                value={text}
+                onChange={handleChange}
+                placeholder="Enter Text"
+              />{" "}
+            </ModalBody>
+
+            <ModalFooter>
+              <Button
+                colorScheme="blue"
+                mr={3}
+                onClick={(event) => {
+                  increase();
+                  onClose();
+                }}
+              >
+                Save
+              </Button>
+            </ModalFooter>
+          </ModalContent>
+        </Modal>
       </GridItem>
-      <Doc />
-      <Doc />
-      <Doc />
-      <Doc />
-      <Doc />
-      <Doc />
-      <Doc />
-      <Doc />
-      <Doc />
-      <Doc />
-      <Doc />
+      <GridItem>
+        {docs}
+      </GridItem>
     </Grid>
   );
 }
-
 export default Documents;
