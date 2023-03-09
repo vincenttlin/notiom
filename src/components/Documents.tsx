@@ -11,7 +11,8 @@ import {
   useDisclosure,
   Button,
   Input,
-  Image,} from "@chakra-ui/react";
+  Image,
+} from "@chakra-ui/react";
 import React, { useState } from "react";
 
 import DocText from "./DocText";
@@ -21,7 +22,8 @@ function Documents() {
   const list: React.ReactElement[] = [];
   const [docs, setDocs] = useState(list);
   const [text, setText] = useState("");
-  const handleChange = (event) => setText(event.target.value);
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) =>
+    setText(event.target.value);
   function increase() {
     setDocs(docs.concat(<DocText text={text} />));
     setText("");
@@ -60,7 +62,7 @@ function Documents() {
               <Button
                 colorScheme="blue"
                 mr={3}
-                onClick={(event) => {
+                onClick={() => {
                   increase();
                   onClose();
                 }}
@@ -71,9 +73,11 @@ function Documents() {
           </ModalContent>
         </Modal>
       </GridItem>
-      <GridItem>
-        {docs}
-      </GridItem>
+      {docs.map((doc, index) => (
+        <GridItem key={index} width="100%">
+          {doc}
+        </GridItem>
+      ))}
     </Grid>
   );
 }
