@@ -17,6 +17,6 @@
     "noUnusedParameters": false,
     "allowJs": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "server/UserSchema.js", "src/pages/api/createDoc.js", "src/pages/api/deleteDoc.js", "src/pages/api/getDoc.js", "src/pages/api/updateDoc.js"],
   "exclude": ["node_modules"]
 }
