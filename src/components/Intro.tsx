@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Flex, Text } from "@chakra-ui/react";
 
 const styles = {
@@ -5,11 +6,10 @@ const styles = {
     backgroundColor: "#F5F5F5",
   },
   title: {
-    position: "absolute",
-    width: "460px",
-    height: "78px",
-    left: "526px",
-    top: "176px",
+    marginTop: "10vh",
+    marginLeft: "65vh",
+    marginBottom: "1vh",
+    marginRight: "20vh",
     color: "#545454",
     fontFamily: "DM Sans",
     fontStyle: "normal",
@@ -18,12 +18,10 @@ const styles = {
     lineWeight: "78px",
   },
   subtitle: {
-    position: "absolute",
-    width: "1039px",
-    height: "52px",
-    left: "290px",
-    top: "297px",
-
+    marginTop: "3vh",
+    marginLeft: "40vh",
+    marginRight: "20vh",
+    marginBottom: "5vh",
     fontFamily: "DM Sans",
     fontStyle: "normal",
     fontWeight: "500",
@@ -36,7 +34,7 @@ const styles = {
 function Intro() {
   return (
     <Flex backgroundColor="#F5F5F5" height="400px">
-      <Flex>
+      <Flex direction="column">
         <Text style={styles.title}> Create. Explore. </Text>
         <Text style={styles.subtitle}>
           The document editing software you've been waiting for
